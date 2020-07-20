@@ -1,0 +1,23 @@
+﻿Projects Set Up
+
+HTML/CSS Projects
+
+
+    1. Set up the repository in github first with the README.md file in it at least.
+    2. Make an issue with all the items you should check and set before starting any project so you don’t forget anything. To make the issue just go to the repository on github and in the tab of issues make a new one and paste the template.
+
+
+    3. Set up the access to let your partner be a collaborator for the project.
+       
+
+    4. Accept the invitation email to collaborate in the project.
+    5. Set up the github linters. Create the .github folder and inside it another folder called workflows. In the workflows folder make a new file called linter.yml and paste the information that is in the microverse/linters-config repository in github
+    6. Create the .gitignore file. To set the linters locally you need to put the node_modules/ folder inside it so it doesn’t get uploaded to the repository. Add any other necessary files that you consider should not be uploaded like logs for the linters and if you are using mac the .ds-store file.
+    7. Set up the linters locally. For this make sure your npm is up to date, as the writing of this text the latest version is the 6.14, if it is outdated you have to install the latest version of nodejs to fix the problem. If the npm is outdated when you try to install the linters you will get an error of some argument missing or command not found.
+       To install the webhint just go into your project folder from the terminal and once there execute the command npm install --save-dev hint@6.0.x , this should install it for the project. To install the Stylelint run the command npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator. For both linters to work you have to copy the .hintrc and .stylelintrc.json files into the root folder for the project, after doing this you can run the linters with the commands npx hint . for webhint and npx stylelint "**/*.{css,scss}" for stylelint.
+    8. Create the feature branch to work on your project.
+    9. Add any common mistakes  you have made in the past project to the issue. Like check for 2 spaces in the indentation or make sure links are clickable.
+
+
+Issue Template
+
